@@ -1,0 +1,18 @@
+@import 'variables.scss';
+@import 'header.scss';
+@import 'main.scss';
+@import 'footer.scss';
+@import 'about.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255) !important;
+}
+

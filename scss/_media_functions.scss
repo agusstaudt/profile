@@ -1,0 +1,247 @@
+/* HACER CONDICIONALES DE TAMAÑO SEGÚN LA PAGE (INDEX, MULTIMEDIA, NOVEDADES)*/
+@mixin media($value) {
+    $media-sm: "only screen and (min-width: 200px) and (max-width: 499px)";
+    $media-msm: "only screen and (min-width: 500px) and (max-width: 699px)";
+    $media-bsm: "only screen and (min-width: 700px) and (max-width: 999px)";
+    $media-smd: "only screen and (min-width: 1000px) and (max-width:1300px)";
+    $media-md: "only screen and (min-width: 1301px) and (max-width:1799px)";
+    $media-lg: "only screen and (min-width : 1800px)";
+    $media-mf: "only screen and (min-width: 200px) and (max-width: 1000px)";
+    $media-gsm: "only screen and (min-width: 200px) and (max-width: 699px)";
+    $media-glg: "only screen and (min-width: 700px)" ;
+
+    @if $value == sm {
+        @media #{$media-sm} { 
+            .hero {
+                &__title {
+                    font-size: 8vw !important;                
+                }
+                &__subtitle {
+                    font-size: 6vw !important;
+                }
+            }
+            .about {
+                &__title {
+                    font-size: 6vw !important;
+                }
+                &__info {
+                    flex-direction: column !important;
+                    padding: 30px !important;
+                    p {
+                      text-align: center !important;
+                      font-size: 3vw !important;
+                      width: 100% !important;
+                    }
+                }
+                &__paragraph {
+                    padding-top: 0px !important;
+                }
+                &__img {
+                    width: 35vw !important;
+                    height: 45vw !important;
+                }
+            }
+            .main_research {
+                h1 {
+                    font-size: 4vw;
+                }
+                div {
+                    h2 {
+                      font-size: 3vw ;
+                    }
+                    ul {
+                        li, a, span {
+                            font-size: 3vw;           
+                        }
+                    }
+            
+                }
+            }  
+            footer {
+                li {
+                    .fab {
+                        font-size: 6vw !important;
+                    }
+                }                
+            }          
+        }
+    }
+
+    @else if $value == msm {
+        @media #{$media-msm} { 
+            .about {
+                &__info {
+                    flex-direction: column !important;
+                    padding: 30px !important; 
+                    p {
+                      text-align: center !important;
+                      font-size: 2.2vw !important;
+                      width: 70% !important;
+                    }
+                }
+            }
+            .main_research {
+                h1 {
+                    font-size: 3.5vw ;
+                }
+                div {
+                    h2 {
+                      font-size: 2.5vw;
+                    }
+                    ul {
+                        li, a, span {
+                            font-size: 2.5vw;           
+                        }
+                    }
+            
+                }
+            }    
+            footer {
+                li {
+                    .fab {
+                        font-size: 6vw !important;
+                    }
+                }                
+            }    
+        }
+    }
+
+    @else if $value == bsm {
+        @media #{$media-bsm} { 
+          .about {
+              &__info {
+                  p {
+                    font-size: 2vw !important;
+                    width: 60% !important;
+                  }
+              }
+          }
+          .main_research {
+                h1 {
+                    font-size:3vw ;
+                }
+                div {
+                    h2 {
+                    font-size: 2vw ;
+                    }
+                    ul {
+                        li, a, span {
+                            font-size: 2vw ;           
+                        }
+                    }
+            
+                }
+            }
+        }
+    }
+    @else if $value == smd {
+        @media #{$media-smd} { 
+            .about {
+                &__info {
+                    padding: 50px !important;
+                    p {
+                      font-size: 1.8vw !important;
+                      width: 70% !important;
+                    }
+                }
+
+            }
+            .main_research {
+                h1 {
+                    font-size:3vw ;
+                }
+                div {
+                    h2 {
+                    font-size: 2vw;
+                    }
+                    ul {
+                        li, a, span {
+                            font-size: 2vw;           
+                        }
+                    }
+            
+                }
+            }
+            footer {
+                li {
+                    .fab {
+                        font-size: 4vw !important;
+                    }
+                }                
+            }  
+        }
+    }
+    @else if $value == md {
+        @media #{$media-md} { 
+            .main_research {
+                h1 {
+                    font-size:2.5vw ;
+                }
+                div {
+                    h2 {
+                    font-size: 1.5vw ;
+                    }
+                    ul {
+                        li, a, span {
+                            font-size: 1.5vw;           
+                        }
+                    }
+            
+                }
+            }
+        }
+    }
+    @else if $value == lg {
+        @media #{$media-lg} { 
+           
+        }
+    }
+
+    @else if $value == mf {
+        @media #{$media-mf} { 
+            #grilla {
+                display: grid;
+                grid-template-areas:
+                "header"
+                "main"
+                "footer";
+                grid-template-rows: 25% 65% 10%;
+                grid-template-columns: 100%;
+                grid-row-gap: 10px;
+                grid-column-gap: 10px;
+                height: 120vh;
+                margin: 0;
+            }
+        
+            footer{
+                justify-content: space-around !important;
+                li {
+                    .fa {
+                        font-size: 9vw !important;
+                    }
+                }
+            }
+        }
+    }
+
+    @else if $value == gsm {
+        @media #{$media-gsm} { 
+            .navbar-brand {
+                font-size: 3.7vw !important;
+            }    
+            .nav-link {
+                font-size: 3.5vw !important;
+             }
+        }
+    }
+    @else if $value == glg {
+        @media #{$media-glg} { 
+            .navbar-brand {
+                font-size: 2.5vw !important;
+            }    
+            .nav-link {
+                font-size: 2.2vw !important;
+             }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+/*HERO SECTION*/
+.generalSet {
+    .nav-link {
+        font-size: 1.5vw;
+        font-family: 'Roboto', sans-serif;
+    }
+    .navbar-brand {
+        font-size: 2vw;
+        font-family: 'Roboto', sans-serif;
+        background-color: #000000;
+        background-image: linear-gradient(45deg, #ffffff, #ffffff);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+    }
+}
+.generalSetIndex {
+    width: 100%;
+    height: 100vh;
+    @extend .generalSet;
+} 
+
+.set_animation {
+    animation-duration: 6s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+    @keyframes aparecer {
+        0% {
+        opacity: 0;
+        }
+        100% {
+        opacity: 1;
+        }
+    }
+}
+.header_index {
+    background: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.424)), 
+                                url(../img/img0.jpg);
+    @extend .generalSetIndex;
+    @extend .generalSet;
+    background-size: cover;
+    background-position: center;
+    nav {
+        background-color: transparent;
+    }
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 90%;
+        width: 100%;
+        &__title {
+            font-size: 6vw;
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffffff;
+            // background-image: linear-gradient(45deg, #d8bf52, #5d3200);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-text-fill-color: transparent;
+            @extend .set_animation
+        }
+        &__subtitle {
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 4vw;
+            @extend .set_animation
+        }
+    }
+}
+
+.header_secondaryPages {
+    background-color: rgba(36, 35, 35, 0.87);
+    @extend .generalSet;
+}
+

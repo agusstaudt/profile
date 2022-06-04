@@ -1,0 +1,33 @@
+@import 'variables.scss';
+@import 'header.scss';
+@import 'main.scss';
+
+/* Media function to set up footer*/
+@include media(mf);
+
+/*FOOTER SECTION*/
+footer {
+    padding: 30px;
+    display: $display;
+    align-items: center;
+    justify-content: center;
+    background: $color-bg;
+    li {
+        width: 10%;
+        text-decoration: none;
+        list-style: none;
+        .fab {
+            font-size: 3vw;
+            color: black;
+            text-decoration: none;
+            &:hover {
+                color: rgb(124, 123, 123);
+            }
+        }
+    }
+    h4 {
+        color: $color-bg;
+    }
+    
+}
+
