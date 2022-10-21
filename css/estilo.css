@@ -1,12 +1,13 @@
 @charset "UTF-8";
 /*VARIABLES*/
+/* HACER CONDICIONALES DE TAMAÑO SEGÚN LA PAGE (INDEX, MULTIMEDIA, NOVEDADES)*/
 /*HERO SECTION*/
 .generalSet .nav-link, .generalSetIndex .nav-link, .header_index .nav-link, .header_secondaryPages .nav-link {
-  font-size: 1.5vw;
+  font-size: 3.5vw;
   font-family: 'Roboto', sans-serif; }
 
 .generalSet .navbar-brand, .generalSetIndex .navbar-brand, .header_index .navbar-brand, .header_secondaryPages .navbar-brand {
-  font-size: 2vw;
+  font-size: 3vw;
   font-family: 'Roboto', sans-serif;
   background-color: #000000;
   background-image: linear-gradient(45deg, #ffffff, #ffffff);
@@ -61,13 +62,14 @@
 
 /* HACER CONDICIONALES DE TAMAÑO SEGÚN LA PAGE (INDEX, MULTIMEDIA, NOVEDADES)*/
 /*VARIABLES*/
+/* HACER CONDICIONALES DE TAMAÑO SEGÚN LA PAGE (INDEX, MULTIMEDIA, NOVEDADES)*/
 /*HERO SECTION*/
 .generalSet .nav-link, .generalSetIndex .nav-link, .header_index .nav-link, .header_secondaryPages .nav-link {
-  font-size: 1.5vw;
+  font-size: 3.5vw;
   font-family: 'Roboto', sans-serif; }
 
 .generalSet .navbar-brand, .generalSetIndex .navbar-brand, .header_index .navbar-brand, .header_secondaryPages .navbar-brand {
-  font-size: 2vw;
+  font-size: 3vw;
   font-family: 'Roboto', sans-serif;
   background-color: #000000;
   background-image: linear-gradient(45deg, #ffffff, #ffffff);
@@ -133,7 +135,9 @@
   color: palevioletred; }
 
 /* MAIN SET*/
-@media only screen and (min-width: 1301px) and (max-width: 1799px) {
+@media only screen and (min-width: 1800px) {
+  #grilla {
+    height: 170vh !important; }
   .main_research h1 {
     font-size: 2.5vw; }
   .main_research div h2 {
@@ -141,33 +145,65 @@
   .main_research div ul li, .main_research div ul a, .main_research div ul span {
     font-size: 1.5vw; } }
 
+@media only screen and (min-width: 1301px) and (max-width: 1799px) {
+  #grilla {
+    height: 160vh !important; }
+  .main_research h1 {
+    font-size: 3.5vw; }
+  .main_research div h2 {
+    font-size: 2.5vw; }
+  .main_research div ul li, .main_research div ul a, .main_research div ul span {
+    font-size: 2.5vw; } }
+
 @media only screen and (min-width: 1000px) and (max-width: 1300px) {
+  #grilla {
+    height: 150vh !important; }
   .about__info {
     padding: 50px !important; }
     .about__info p {
       font-size: 1.8vw !important;
       width: 70% !important; }
+  .navbar-brand {
+    font-size: 6vw !important; }
+  .nav-link {
+    font-size: 6vw !important; }
   .main_research h1 {
-    font-size: 3vw; }
+    font-size: 4vw; }
   .main_research div h2 {
-    font-size: 2vw; }
+    font-size: 3vw; }
   .main_research div ul li, .main_research div ul a, .main_research div ul span {
-    font-size: 2vw; }
+    font-size: 3vw; }
   footer li .fab {
     font-size: 4vw !important; } }
 
 @media only screen and (min-width: 700px) and (max-width: 999px) {
+  #grilla {
+    height: 140vh !important; }
+  .navbar-brand {
+    font-size: 6vw !important; }
+  .nav-link {
+    font-size: 6vw !important; }
   .about__info p {
     font-size: 2vw !important;
     width: 60% !important; }
   .main_research h1 {
-    font-size: 3vw; }
+    font-size: 3.7vw; }
   .main_research div h2 {
-    font-size: 2vw; }
+    font-size: 3.5vw; }
   .main_research div ul li, .main_research div ul a, .main_research div ul span {
-    font-size: 2vw; } }
+    font-size: 3vw; } }
 
 @media only screen and (min-width: 500px) and (max-width: 699px) {
+  #grilla {
+    height: 130vh !important; }
+  .hero__title {
+    font-size: 6vw !important; }
+  .hero__subtitle {
+    font-size: 4vw !important; }
+  .navbar-brand {
+    font-size: 6vw !important; }
+  .nav-link {
+    font-size: 6vw !important; }
   .about__info {
     flex-direction: column !important;
     padding: 30px !important; }
@@ -176,18 +212,24 @@
       font-size: 2.2vw !important;
       width: 70% !important; }
   .main_research h1 {
-    font-size: 3.5vw; }
+    font-size: 3.7vw; }
   .main_research div h2 {
-    font-size: 2.5vw; }
+    font-size: 3.5vw; }
   .main_research div ul li, .main_research div ul a, .main_research div ul span {
-    font-size: 2.5vw; }
+    font-size: 3vw; }
   footer li .fab {
     font-size: 6vw !important; } }
 
 @media only screen and (min-width: 200px) and (max-width: 499px) {
+  #grilla {
+    height: 110vh !important; }
   .hero__title {
     font-size: 8vw !important; }
   .hero__subtitle {
+    font-size: 6vw !important; }
+  .navbar-brand {
+    font-size: 6vw !important; }
+  .nav-link {
     font-size: 6vw !important; }
   .about__title {
     font-size: 6vw !important; }
@@ -216,28 +258,15 @@
   #grilla {
     display: grid;
     grid-template-areas: "header" "main" "footer";
-    grid-template-rows: 25% 65% 10%;
+    grid-template-rows: 25% 70% 5%;
     grid-template-columns: 100%;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
-    height: 120vh;
     margin: 0; }
   footer {
     justify-content: space-around !important; }
     footer li .fa {
       font-size: 9vw !important; } }
-
-@media only screen and (min-width: 200px) and (max-width: 699px) {
-  .navbar-brand {
-    font-size: 3.7vw !important; }
-  .nav-link {
-    font-size: 3.5vw !important; } }
-
-@media only screen and (min-width: 700px) {
-  .navbar-brand {
-    font-size: 2.5vw !important; }
-  .nav-link {
-    font-size: 2.2vw !important; } }
 
 /* MAIN ABOUT*/
 .about h2 {
@@ -305,13 +334,14 @@ footer {
   margin: 0; }
 
 /*VARIABLES*/
+/* HACER CONDICIONALES DE TAMAÑO SEGÚN LA PAGE (INDEX, MULTIMEDIA, NOVEDADES)*/
 /*HERO SECTION*/
 .generalSet .nav-link, .generalSetIndex .nav-link, .header_index .nav-link, .header_secondaryPages .nav-link {
-  font-size: 1.5vw;
+  font-size: 3.5vw;
   font-family: 'Roboto', sans-serif; }
 
 .generalSet .navbar-brand, .generalSetIndex .navbar-brand, .header_index .navbar-brand, .header_secondaryPages .navbar-brand {
-  font-size: 2vw;
+  font-size: 3vw;
   font-family: 'Roboto', sans-serif;
   background-color: #000000;
   background-image: linear-gradient(45deg, #ffffff, #ffffff);
@@ -366,13 +396,14 @@ footer {
 
 /* HACER CONDICIONALES DE TAMAÑO SEGÚN LA PAGE (INDEX, MULTIMEDIA, NOVEDADES)*/
 /*VARIABLES*/
+/* HACER CONDICIONALES DE TAMAÑO SEGÚN LA PAGE (INDEX, MULTIMEDIA, NOVEDADES)*/
 /*HERO SECTION*/
 .generalSet .nav-link, .generalSetIndex .nav-link, .header_index .nav-link, .header_secondaryPages .nav-link {
-  font-size: 1.5vw;
+  font-size: 3.5vw;
   font-family: 'Roboto', sans-serif; }
 
 .generalSet .navbar-brand, .generalSetIndex .navbar-brand, .header_index .navbar-brand, .header_secondaryPages .navbar-brand {
-  font-size: 2vw;
+  font-size: 3vw;
   font-family: 'Roboto', sans-serif;
   background-color: #000000;
   background-image: linear-gradient(45deg, #ffffff, #ffffff);
@@ -438,7 +469,9 @@ footer {
   color: palevioletred; }
 
 /* MAIN SET*/
-@media only screen and (min-width: 1301px) and (max-width: 1799px) {
+@media only screen and (min-width: 1800px) {
+  #grilla {
+    height: 170vh !important; }
   .main_research h1 {
     font-size: 2.5vw; }
   .main_research div h2 {
@@ -446,33 +479,65 @@ footer {
   .main_research div ul li, .main_research div ul a, .main_research div ul span {
     font-size: 1.5vw; } }
 
+@media only screen and (min-width: 1301px) and (max-width: 1799px) {
+  #grilla {
+    height: 160vh !important; }
+  .main_research h1 {
+    font-size: 3.5vw; }
+  .main_research div h2 {
+    font-size: 2.5vw; }
+  .main_research div ul li, .main_research div ul a, .main_research div ul span {
+    font-size: 2.5vw; } }
+
 @media only screen and (min-width: 1000px) and (max-width: 1300px) {
+  #grilla {
+    height: 150vh !important; }
   .about__info {
     padding: 50px !important; }
     .about__info p {
       font-size: 1.8vw !important;
       width: 70% !important; }
+  .navbar-brand {
+    font-size: 6vw !important; }
+  .nav-link {
+    font-size: 6vw !important; }
   .main_research h1 {
-    font-size: 3vw; }
+    font-size: 4vw; }
   .main_research div h2 {
-    font-size: 2vw; }
+    font-size: 3vw; }
   .main_research div ul li, .main_research div ul a, .main_research div ul span {
-    font-size: 2vw; }
+    font-size: 3vw; }
   footer li .fab {
     font-size: 4vw !important; } }
 
 @media only screen and (min-width: 700px) and (max-width: 999px) {
+  #grilla {
+    height: 140vh !important; }
+  .navbar-brand {
+    font-size: 6vw !important; }
+  .nav-link {
+    font-size: 6vw !important; }
   .about__info p {
     font-size: 2vw !important;
     width: 60% !important; }
   .main_research h1 {
-    font-size: 3vw; }
+    font-size: 3.7vw; }
   .main_research div h2 {
-    font-size: 2vw; }
+    font-size: 3.5vw; }
   .main_research div ul li, .main_research div ul a, .main_research div ul span {
-    font-size: 2vw; } }
+    font-size: 3vw; } }
 
 @media only screen and (min-width: 500px) and (max-width: 699px) {
+  #grilla {
+    height: 130vh !important; }
+  .hero__title {
+    font-size: 6vw !important; }
+  .hero__subtitle {
+    font-size: 4vw !important; }
+  .navbar-brand {
+    font-size: 6vw !important; }
+  .nav-link {
+    font-size: 6vw !important; }
   .about__info {
     flex-direction: column !important;
     padding: 30px !important; }
@@ -481,18 +546,24 @@ footer {
       font-size: 2.2vw !important;
       width: 70% !important; }
   .main_research h1 {
-    font-size: 3.5vw; }
+    font-size: 3.7vw; }
   .main_research div h2 {
-    font-size: 2.5vw; }
+    font-size: 3.5vw; }
   .main_research div ul li, .main_research div ul a, .main_research div ul span {
-    font-size: 2.5vw; }
+    font-size: 3vw; }
   footer li .fab {
     font-size: 6vw !important; } }
 
 @media only screen and (min-width: 200px) and (max-width: 499px) {
+  #grilla {
+    height: 110vh !important; }
   .hero__title {
     font-size: 8vw !important; }
   .hero__subtitle {
+    font-size: 6vw !important; }
+  .navbar-brand {
+    font-size: 6vw !important; }
+  .nav-link {
     font-size: 6vw !important; }
   .about__title {
     font-size: 6vw !important; }
@@ -521,28 +592,15 @@ footer {
   #grilla {
     display: grid;
     grid-template-areas: "header" "main" "footer";
-    grid-template-rows: 25% 65% 10%;
+    grid-template-rows: 25% 70% 5%;
     grid-template-columns: 100%;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
-    height: 120vh;
     margin: 0; }
   footer {
     justify-content: space-around !important; }
     footer li .fa {
       font-size: 9vw !important; } }
-
-@media only screen and (min-width: 200px) and (max-width: 699px) {
-  .navbar-brand {
-    font-size: 3.7vw !important; }
-  .nav-link {
-    font-size: 3.5vw !important; } }
-
-@media only screen and (min-width: 700px) {
-  .navbar-brand {
-    font-size: 2.5vw !important; }
-  .nav-link {
-    font-size: 2.2vw !important; } }
 
 /* MAIN ABOUT*/
 .about h2 {
@@ -614,11 +672,10 @@ footer {
   #grilla {
     display: grid;
     grid-template-areas: "header" "main" "footer";
-    grid-template-rows: 25% 65% 10%;
+    grid-template-rows: 25% 70% 5%;
     grid-template-columns: 100%;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
-    height: 120vh;
     margin: 0; }
   footer {
     justify-content: space-around !important; }
