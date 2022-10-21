@@ -3,7 +3,10 @@
 /* HACER CONDICIONALES DE TAMAÑO SEGÚN LA PAGE (INDEX, MULTIMEDIA, NOVEDADES)*/
 /*HERO SECTION*/
 .generalSet .nav-link, .generalSetIndex .nav-link, .header_index .nav-link, .header_secondaryPages .nav-link {
+<<<<<<< HEAD
+=======
   font-size: 3.5vw;
+>>>>>>> 77a4dc5c06206f2aca2c2b838756348a7cc0c9ad
   font-family: 'Roboto', sans-serif; }
 
 .generalSet .navbar-brand, .generalSetIndex .navbar-brand, .header_index .navbar-brand, .header_secondaryPages .navbar-brand {
@@ -65,7 +68,10 @@
 /* HACER CONDICIONALES DE TAMAÑO SEGÚN LA PAGE (INDEX, MULTIMEDIA, NOVEDADES)*/
 /*HERO SECTION*/
 .generalSet .nav-link, .generalSetIndex .nav-link, .header_index .nav-link, .header_secondaryPages .nav-link {
+<<<<<<< HEAD
+=======
   font-size: 3.5vw;
+>>>>>>> 77a4dc5c06206f2aca2c2b838756348a7cc0c9ad
   font-family: 'Roboto', sans-serif; }
 
 .generalSet .navbar-brand, .generalSetIndex .navbar-brand, .header_index .navbar-brand, .header_secondaryPages .navbar-brand {
@@ -138,6 +144,13 @@
 @media only screen and (min-width: 1800px) {
   #grilla {
     height: 170vh !important; }
+<<<<<<< HEAD
+  .navbar-brand {
+    font-size: 2.8vw !important; }
+  .nav-link {
+    font-size: 2.8vw !important; }
+=======
+>>>>>>> 77a4dc5c06206f2aca2c2b838756348a7cc0c9ad
   .main_research h1 {
     font-size: 2.5vw; }
   .main_research div h2 {
@@ -148,6 +161,13 @@
 @media only screen and (min-width: 1301px) and (max-width: 1799px) {
   #grilla {
     height: 160vh !important; }
+<<<<<<< HEAD
+  .navbar-brand {
+    font-size: 2.8vw !important; }
+  .nav-link {
+    font-size: 2.8vw !important; }
+=======
+>>>>>>> 77a4dc5c06206f2aca2c2b838756348a7cc0c9ad
   .main_research h1 {
     font-size: 3.5vw; }
   .main_research div h2 {
@@ -164,9 +184,15 @@
       font-size: 1.8vw !important;
       width: 70% !important; }
   .navbar-brand {
+<<<<<<< HEAD
+    font-size: 5.6vw !important; }
+  .nav-link {
+    font-size: 5.6vw !important; }
+=======
     font-size: 6vw !important; }
   .nav-link {
     font-size: 6vw !important; }
+>>>>>>> 77a4dc5c06206f2aca2c2b838756348a7cc0c9ad
   .main_research h1 {
     font-size: 4vw; }
   .main_research div h2 {
@@ -180,9 +206,15 @@
   #grilla {
     height: 140vh !important; }
   .navbar-brand {
+<<<<<<< HEAD
+    font-size: 3.1vw !important; }
+  .nav-link {
+    font-size: 3.1vw !important; }
+=======
     font-size: 6vw !important; }
   .nav-link {
     font-size: 6vw !important; }
+>>>>>>> 77a4dc5c06206f2aca2c2b838756348a7cc0c9ad
   .about__info p {
     font-size: 2vw !important;
     width: 60% !important; }
@@ -196,14 +228,24 @@
 @media only screen and (min-width: 500px) and (max-width: 699px) {
   #grilla {
     height: 130vh !important; }
+<<<<<<< HEAD
+  .navbar-brand {
+    font-size: 4vw !important; }
+  .nav-link {
+    font-size: 4vw !important; }
+=======
+>>>>>>> 77a4dc5c06206f2aca2c2b838756348a7cc0c9ad
   .hero__title {
     font-size: 6vw !important; }
   .hero__subtitle {
     font-size: 4vw !important; }
+<<<<<<< HEAD
+=======
   .navbar-brand {
     font-size: 6vw !important; }
   .nav-link {
     font-size: 6vw !important; }
+>>>>>>> 77a4dc5c06206f2aca2c2b838756348a7cc0c9ad
   .about__info {
     flex-direction: column !important;
     padding: 30px !important; }
@@ -337,7 +379,10 @@ footer {
 /* HACER CONDICIONALES DE TAMAÑO SEGÚN LA PAGE (INDEX, MULTIMEDIA, NOVEDADES)*/
 /*HERO SECTION*/
 .generalSet .nav-link, .generalSetIndex .nav-link, .header_index .nav-link, .header_secondaryPages .nav-link {
+<<<<<<< HEAD
+=======
   font-size: 3.5vw;
+>>>>>>> 77a4dc5c06206f2aca2c2b838756348a7cc0c9ad
   font-family: 'Roboto', sans-serif; }
 
 .generalSet .navbar-brand, .generalSetIndex .navbar-brand, .header_index .navbar-brand, .header_secondaryPages .navbar-brand {
@@ -399,7 +444,10 @@ footer {
 /* HACER CONDICIONALES DE TAMAÑO SEGÚN LA PAGE (INDEX, MULTIMEDIA, NOVEDADES)*/
 /*HERO SECTION*/
 .generalSet .nav-link, .generalSetIndex .nav-link, .header_index .nav-link, .header_secondaryPages .nav-link {
+<<<<<<< HEAD
+=======
   font-size: 3.5vw;
+>>>>>>> 77a4dc5c06206f2aca2c2b838756348a7cc0c9ad
   font-family: 'Roboto', sans-serif; }
 
 .generalSet .navbar-brand, .generalSetIndex .navbar-brand, .header_index .navbar-brand, .header_secondaryPages .navbar-brand {
@@ -472,6 +520,13 @@ footer {
 @media only screen and (min-width: 1800px) {
   #grilla {
     height: 170vh !important; }
+<<<<<<< HEAD
+  .navbar-brand {
+    font-size: 2.8vw !important; }
+  .nav-link {
+    font-size: 2.8vw !important; }
+=======
+>>>>>>> 77a4dc5c06206f2aca2c2b838756348a7cc0c9ad
   .main_research h1 {
     font-size: 2.5vw; }
   .main_research div h2 {
@@ -482,6 +537,13 @@ footer {
 @media only screen and (min-width: 1301px) and (max-width: 1799px) {
   #grilla {
     height: 160vh !important; }
+<<<<<<< HEAD
+  .navbar-brand {
+    font-size: 2.8vw !important; }
+  .nav-link {
+    font-size: 2.8vw !important; }
+=======
+>>>>>>> 77a4dc5c06206f2aca2c2b838756348a7cc0c9ad
   .main_research h1 {
     font-size: 3.5vw; }
   .main_research div h2 {
@@ -498,9 +560,15 @@ footer {
       font-size: 1.8vw !important;
       width: 70% !important; }
   .navbar-brand {
+<<<<<<< HEAD
+    font-size: 5.6vw !important; }
+  .nav-link {
+    font-size: 5.6vw !important; }
+=======
     font-size: 6vw !important; }
   .nav-link {
     font-size: 6vw !important; }
+>>>>>>> 77a4dc5c06206f2aca2c2b838756348a7cc0c9ad
   .main_research h1 {
     font-size: 4vw; }
   .main_research div h2 {
@@ -514,9 +582,15 @@ footer {
   #grilla {
     height: 140vh !important; }
   .navbar-brand {
+<<<<<<< HEAD
+    font-size: 3.1vw !important; }
+  .nav-link {
+    font-size: 3.1vw !important; }
+=======
     font-size: 6vw !important; }
   .nav-link {
     font-size: 6vw !important; }
+>>>>>>> 77a4dc5c06206f2aca2c2b838756348a7cc0c9ad
   .about__info p {
     font-size: 2vw !important;
     width: 60% !important; }
@@ -530,14 +604,24 @@ footer {
 @media only screen and (min-width: 500px) and (max-width: 699px) {
   #grilla {
     height: 130vh !important; }
+<<<<<<< HEAD
+  .navbar-brand {
+    font-size: 4vw !important; }
+  .nav-link {
+    font-size: 4vw !important; }
+=======
+>>>>>>> 77a4dc5c06206f2aca2c2b838756348a7cc0c9ad
   .hero__title {
     font-size: 6vw !important; }
   .hero__subtitle {
     font-size: 4vw !important; }
+<<<<<<< HEAD
+=======
   .navbar-brand {
     font-size: 6vw !important; }
   .nav-link {
     font-size: 6vw !important; }
+>>>>>>> 77a4dc5c06206f2aca2c2b838756348a7cc0c9ad
   .about__info {
     flex-direction: column !important;
     padding: 30px !important; }
